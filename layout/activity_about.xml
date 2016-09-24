@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.snedan.test.AboutActivity"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_name"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/ic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Version 2.0"
+        android:id="@+id/textView4"
+        android:textSize="18dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Vishal S. Robertson\nLogo Designed by Alan Couto"
+        android:id="@+id/textView5"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Kindly Rate This App If You Use It"
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ffffff"
+        android:background="#000000"
+        android:textColor="#29b6f6"
+        android:gravity="center"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CREDITS"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="#000000"
+        android:textColor="#29b6f6" />
+
+</RelativeLayout>

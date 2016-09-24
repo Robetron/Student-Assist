@@ -1,0 +1,139 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WindowBackground"
+    android:gravity="center_horizontal" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+        <Button
+            android:textSize="40sp"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/DateButton"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:background="#ff000000"
+            android:textColor="@color/WindowBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/Text1"
+            android:textAlignment="gravity"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/Text2"
+            android:textAlignment="gravity"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignStart="@+id/Text1" />
+
+
+
+        <TextView
+            android:text="ATTENDED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/Text1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="BUNKED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/Text2"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/editText"
+            android:background="@drawable/gcircle" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button2"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:background="@drawable/gcircle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button1"
+            android:layout_marginBottom="64dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/button3"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_alignBottom="@+id/Text1"
+            android:layout_alignStart="@+id/button4"
+            android:layout_toStartOf="@+id/editText"
+            android:background="@drawable/rcircle" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/button4"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:background="@drawable/rcircle"
+            android:layout_alignTop="@+id/button2"
+            android:layout_toStartOf="@+id/editText" />
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10sp"
+            android:text="ADD"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#000000" />
+    </RelativeLayout>
+</RelativeLayout>
